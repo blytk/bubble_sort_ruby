@@ -20,6 +20,7 @@ def bubble_sort(number_array)
         end
     end
     p output_array
+    output_array
 end
 
 bubble_sort([4, 3, 78, 2, 0, 2])
