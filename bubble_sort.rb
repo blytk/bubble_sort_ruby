@@ -5,7 +5,9 @@
 
 def bubble_sort(number_array)
     output_array = number_array.dup
-    loop do
+
+    changes = 1
+    while changes > 0
         changes = 0
         for i in 0...output_array.length - 1
             if output_array[i] > output_array[i + 1]
@@ -15,15 +17,11 @@ def bubble_sort(number_array)
                 changes = changes + 1
             end
         end
-        if changes == 0
-            break
-        end
     end
-    p output_array
     output_array
 end
 
-bubble_sort([4, 3, 78, 2, 0, 2])
-bubble_sort([7, 89, 205, -8, 1, 0, 975, 2050])
-bubble_sort([0, 1, 2, 3, 4, 5, 6, 7])
+p bubble_sort([4, 3, 78, 2, 0, 2])
+p bubble_sort([7, 89, 205, -8, 1, 0, 975, 2050])
+p bubble_sort([0, 1, 2, 3, 4, 5, 6, 7])
 
